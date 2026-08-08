@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { ArrowLeft, Trophy, Play, RotateCcw, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import confetti from 'canvas-confetti';
+import { CONFIG } from '../config';
+import { getDriveDirectLink } from '../utils';
 
 const SCORE_TARGET = 50;
 const PLAYER_SPEED = 4;
@@ -710,8 +712,8 @@ export const GameScreen = ({ onBack }: { onBack: () => void }) => {
                       {/* Foto berbingkai putih */}
                       <div className="w-full h-full bg-white p-2 pb-8 rounded-lg shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
                         <img 
-                          // GANTI LINK FOTO DI BAWAH INI (src="...")
-                          src="https://drive.google.com/file/d/1Ad8lM0bgxcQY_R8C_cf1I8xn_G6UFRkt/view?usp=sharing" 
+                          // GANTI LINK FOTO INI DI FILE src/config.ts
+                          src={getDriveDirectLink(CONFIG.FOTO_GAME)} 
                           alt="Kenangan" 
                           className="w-full h-full object-cover rounded bg-slate-200" 
                         />

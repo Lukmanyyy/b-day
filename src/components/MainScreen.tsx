@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { triggerFireworks, triggerSimpleConfetti } from '../utils/fireworks';
 import { Compass, Map, PartyPopper } from 'lucide-react';
 import { useEffect } from 'react';
+import { CONFIG } from '../config';
+import { getDriveDirectLink } from '../utils';
 
 export const MainScreen = ({ onPlay }: { onPlay: () => void }) => {
 
@@ -79,11 +81,10 @@ export const MainScreen = ({ onPlay }: { onPlay: () => void }) => {
           <div className="absolute inset-0 bg-gradient-to-tr from-emerald-400 to-sky-400 rounded-full animate-spin" style={{ animationDuration: '4s' }} />
           <div className="absolute inset-[4px] bg-[#1C2541] rounded-full overflow-hidden z-10 flex items-center justify-center">
             {/* 
-              TIPS: Ganti URL src ini dengan foto teman kamu! 
-              Upload file ke panel kiri (file explorer), lalu panggil nama filenya misal: src="/foto-teman.jpg"
+              TIPS: Ganti URL src ini di file src/config.ts! 
             */}
             <img 
-              src="https://drive.google.com/file/d/1Ad8lM0bgxcQY_R8C_cf1I8xn_G6UFRkt/view?usp=sharing" 
+              src={getDriveDirectLink(CONFIG.FOTO_MAIN)} 
               alt="Foto Teman" 
               className="w-full h-full object-cover"
             />
