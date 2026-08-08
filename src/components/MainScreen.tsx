@@ -3,7 +3,7 @@ import { triggerFireworks, triggerSimpleConfetti } from '../utils/fireworks';
 import { Compass, Map, PartyPopper } from 'lucide-react';
 import { useEffect } from 'react';
 import { CONFIG } from '../config';
-import { getDriveDirectLink } from '../utils';
+import { getDriveImageLink } from '../utils';
 
 export const MainScreen = ({ onPlay }: { onPlay: () => void }) => {
 
@@ -84,9 +84,10 @@ export const MainScreen = ({ onPlay }: { onPlay: () => void }) => {
               TIPS: Ganti URL src ini di file src/config.ts! 
             */}
             <img 
-              src={getDriveDirectLink(CONFIG.FOTO_MAIN)} 
+              src={getDriveImageLink(CONFIG.FOTO_MAIN)} 
               alt="Foto Teman" 
               className="w-full h-full object-cover"
+              referrerPolicy="no-referrer"
             />
           </div>
           <motion.div 

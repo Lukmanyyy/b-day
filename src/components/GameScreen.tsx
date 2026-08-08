@@ -3,7 +3,7 @@ import { ArrowLeft, Trophy, Play, RotateCcw, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import confetti from 'canvas-confetti';
 import { CONFIG } from '../config';
-import { getDriveDirectLink } from '../utils';
+import { getDriveImageLink } from '../utils';
 
 const SCORE_TARGET = 50;
 const PLAYER_SPEED = 4;
@@ -713,9 +713,10 @@ export const GameScreen = ({ onBack }: { onBack: () => void }) => {
                       <div className="w-full h-full bg-white p-2 pb-8 rounded-lg shadow-xl transform rotate-3 hover:rotate-0 transition-transform duration-300">
                         <img 
                           // GANTI LINK FOTO INI DI FILE src/config.ts
-                          src={getDriveDirectLink(CONFIG.FOTO_GAME)} 
+                          src={getDriveImageLink(CONFIG.FOTO_GAME)} 
                           alt="Kenangan" 
                           className="w-full h-full object-cover rounded bg-slate-200" 
+                          referrerPolicy="no-referrer"
                         />
                       </div>
                     </motion.div>
