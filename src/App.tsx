@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <div className="font-sans antialiased text-gray-900 min-h-screen bg-[#0B132B] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      <audio id="bg-music" src="https://drive.google.com/file/d/1BPFNdE9-1nA9Xm-TNCbaKRRtAboD4XRX/view?usp=sharing" loop />
+      <audio id="bg-music" src="https://jumpshare.com/s/F0nfbJh7jw71sObNEwit" loop />
       {step === 'loading' && <LoadingScreen onComplete={() => setStep('auth')} />}
       {step === 'auth' && <AuthScreen onAccessGranted={() => setStep('main')} />}
       {step === 'main' && <MainScreen onPlay={() => setStep('game')} />}
