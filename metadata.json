@@ -1,0 +1,6 @@
+{
+  "name": "Website Ulang Tahun Pendaki",
+  "description": "Website ulang tahun spesial bertema gunung dengan efek kembang api.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
