@@ -1,7 +1,7 @@
 export const CONFIG = {
   // 🎵 Google Drive tidak lagi mengizinkan audio untuk diputar langsung di website lain (karena kebijakan keamanan CORS/CORP dari Google).
   // Silakan gunakan layanan hosting file lain seperti GitHub, Dropbox, atau Firebase Storage.
-  AUDIO_URL: "file:///C:/Users/Asus/Downloads/bday.mp3",
+  AUDIO_URL: "https://severe-peach-2xiehpxh.edgeone.dev/",
   
   // 📸 GANTI LINK FOTO PERTAMA DI SINI (BISA PAKAI LINK GOOGLE DRIVE)
   FOTO_MAIN: "https://drive.google.com/file/d/1VJcY3_xqdzTMXrHSMaCQ4KEThCY3uTPc/view?usp=sharing",
