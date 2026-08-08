@@ -83,7 +83,7 @@ export const MainScreen = ({ onPlay }: { onPlay: () => void }) => {
               Upload file ke panel kiri (file explorer), lalu panggil nama filenya misal: src="/foto-teman.jpg"
             */}
             <img 
-              src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80" 
+              src="https://drive.google.com/file/d/1Ad8lM0bgxcQY_R8C_cf1I8xn_G6UFRkt/view?usp=sharing" 
               alt="Foto Teman" 
               className="w-full h-full object-cover"
             />
